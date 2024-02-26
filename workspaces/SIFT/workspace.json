@@ -2,7 +2,28 @@
   "friendly_name": "SIFT Workstation",
   "image_src": "SIFT.png",
   "description": "The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings.",
-  "name": "kasmweb/tracelabs:1.15.0",
+  "name": "cybrechief/sift:1.15.0",
+  "run_config": {
+    "dns": [
+      "192.168.1.2"
+    ],
+    "cap_add": [
+      "NET_ADMIN",
+      "NET_RAW"
+    ],
+    "security_opt": [
+      "seccomp=unconfined"
+    ]
+  },
+  "exec_config"{
+    "first_launch": {
+      "cmd": "bash -c 'echo $kasmUser >> /etc/sudoers'",
+      "user": "root",
+      "environment": {
+        "kasmUser": "%kasm-user   ALL=(ALL)  NOPASSWD:ALL"
+      }
+    }
+  },
   "cores": 2,
   "memory": 2768,
   "gpu_count": 0,
