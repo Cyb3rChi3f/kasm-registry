@@ -3,6 +3,11 @@
   "image_src": "blob:https://cyb3rchi3f.github.io/2d4f1393-57b0-4ada-bfbb-259b3a7164df",
   "description": "The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite. SIFT demonstrates that advanced incident response capabilities and deep-dive digital forensic techniques can be accomplished using cutting-edge open-source tools that are freely available and frequently updated.",
   "name": "cybrechief/sift:1.15.0",
+  "cores": 2,
+  "memory": 2768,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Inherit",
+  "docker_registry": "https://index.docker.io/v1/",
   "run_config": {
     "dns": [
       "192.168.1.2"
@@ -22,13 +27,7 @@
       "environment": {
         "kasmUser": "%kasm-user   ALL=(ALL)  NOPASSWD:ALL"
       }
-    }
-  },
-  "cores": 2,
-  "memory": 2768,
-  "gpu_count": 0,
-  "cpu_allocation_method": "Inherit",
-  "docker_registry": "https://index.docker.io/v1/",
+    },
   "categories": [
     "Development"
   ],
