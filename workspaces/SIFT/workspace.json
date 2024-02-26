@@ -1,7 +1,7 @@
 {
   "friendly_name": "SIFT Workstation",
-  "image_src": "SIFT.png",
-  "description": "The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings.",
+  "image_src": "blob:https://cyb3rchi3f.github.io/2d4f1393-57b0-4ada-bfbb-259b3a7164df",
+  "description": "The SIFT Workstation is a collection of free and open-source incident response and forensic tools designed to perform detailed digital forensic examinations in a variety of settings. It can match any current incident response and forensic tool suite. SIFT demonstrates that advanced incident response capabilities and deep-dive digital forensic techniques can be accomplished using cutting-edge open-source tools that are freely available and frequently updated.",
   "name": "cybrechief/sift:1.15.0",
   "run_config": {
     "dns": [
@@ -37,9 +37,5 @@
   "image_type": "Container",
   "architecture": [
     "amd64"
-  ],
-  "compatibility": [
-    "1.15.x"
-  ],
-  "uncompressed_size_mb": 12300
+  ]
 }
