@@ -2,8 +2,8 @@
 
 const nextConfig = {
   env: {
-    name: 'Kasm Technologies',
-    description: 'The official store for Kasm supported workspaces.',
+    name: 'CyberchiefTechnologies',
+    description: 'Custome store for Kasm supported workspaces.',
     icon: '/img/logo.svg',
     listUrl: 'https://cyb3rchi3f.github.io/kasm-registry/',
     contactUrl: 'https://kasmweb.com/support',
