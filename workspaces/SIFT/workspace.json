@@ -17,6 +17,30 @@
   "architecture": [
     "amd64"
   ],
+  "run_config": {
+    "dns": [
+      "8.8.8.8",
+      "1.1.1.1"
+    ],
+    "cap_add": [
+      "NET_ADMIN",
+      "NET_RAW"
+    ],
+    "security_opt": [
+      "seccomp=unconfined"
+    ]
+  },
+  "exec_config": {
+    "go": {
+        "first_launch": {
+          "cmd": "bash -c 'echo $kasmUser >> /etc/sudoers'",
+          "user": "root",
+          "environment": {
+            "kasmUser": "%kasm-user   ALL=(ALL)  NOPASSWD:ALL"
+          }
+        }
+	}
+  },
   "compatibility": [
     "1.15.x"
   ],
