@@ -20,14 +20,15 @@
       "seccomp=unconfined"
     ]
   },
-  "exec_config"{
+  "exec_config":{
     "first_launch": {
       "cmd": "bash -c 'echo $kasmUser >> /etc/sudoers'",
       "user": "root",
       "environment": {
         "kasmUser": "%kasm-user   ALL=(ALL)  NOPASSWD:ALL"
       }
-    },
+    }
+  },
   "categories": [
     "Development"
   ],
