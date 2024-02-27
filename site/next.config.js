@@ -4,7 +4,7 @@ const nextConfig = {
   env: {
     name: 'Cyberchief LLC.',
     description: 'Kasm workspaces provided by Cyberchief LLC.',
-    icon: 'https://github.com/Cyb3rChi3f/kasm-registry/blob/1.0/site/logo/Phoenix.png',
+    icon: '/img/logo.svg',
     listUrl: 'https://cyb3rchi3f.github.io/kasm-registry/',
     contactUrl: 'https://github.com/Cyb3rChi3f/kasm-registry/wiki',
   },
